@@ -45,6 +45,7 @@ a:hover {
 
 #wrapper {
 	width: 960px;
+	height: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -178,10 +179,29 @@ a:hover {
 	font-size: 10px;
 	color: #FFFFFF;
 }
+/*Cuerpo*/
+.proyectos{
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+}
+.noticias{
+		width: 80%;
+		height: 300px;
+		/*border-top-width: 10px;
+  	border-right-width: 1em;
+  	border-bottom-width: thick;
+  	border-left-width: thin;*/
+		margin: 0 auto;
+		padding: 0;
+}
+img{
+	width: 100%;
+	height: 500px;
 
-
+}
 /* Footer */
-#foo {
+.foo {
 	padding: 0;
 	margin: 0;
 }
@@ -189,14 +209,13 @@ a:hover {
 	height: 40px;
 	margin: 0 auto;
 	width:100%;
-	position: absolute;
+	position: relative;
   bottom: 0;
 	padding: 0px 0 15px 0;
 	background: rgb(232,116,0);
 	border-top: 1px solid #D3DEF0;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
 #footer p {
 	margin: 0;
 	padding-top: 5px;

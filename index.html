@@ -4,6 +4,24 @@
 		<meta charset="utf-8">
 		<title>Pagina - Inicio</title>
 		<link href="Css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+		<script>
+		    var imagenes=new Array(
+		        ['img/1.jpg','http://www.quisytech.com/Quisypet/'],
+		        ['img/2.jpg','http://www.quisytech.com/Iot/']
+		    );
+		    function rotarImagenes()
+		    {
+		        var index=Math.floor((Math.random()*imagenes.length));
+		        document.getElementById("imagen").src=imagenes[index][0];
+		        document.getElementById("link").href=imagenes[index][1];
+		    }
+
+		    onload=function()
+		    {
+		        rotarImagenes();
+		        setInterval(rotarImagenes,1000);
+		    }
+		</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -22,9 +40,10 @@
 					</form>
 					</div>
 			</div>
-			<!-- end #sidebar -->
+			<!-- end #header -->
 		</div>
-		<!-- end #header -->
+		<!-- end #Header -->
+
 		<div id="menu">
 			<ul>
 				<li class="current_page_item"><a href="#">Home</a></li>
@@ -36,6 +55,18 @@
 			</ul>
 		</div>
 		<!-- end #menu -->
+
+		<div id="contenido">
+			<div class="proyectos">
+				<a href="" id="link"><img src="" id="imagen"></a>
+			</div>
+			<br>
+			<div class="noticias">
+				<h2>Last News</h2>
+				<iframe src="http://graficos.elfinanciero.com.mx/dev/widget/rss.php" name="El Financiero" height="300px" width="100%" frameborder="1" scrolling="yes">EF</iframe>
+			</div>
+		</div>
+		<!-- end #Contenido -->
 
 		</div>
 		<div id="footer">
