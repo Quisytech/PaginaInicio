@@ -6,12 +6,18 @@
 		<link href="Css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
 		<script>
 		    var imagenes=new Array(
-		        ['Img/1.jpg','http://www.quisytech.com/Quisypet/'],
-		        ['Img/2.jpg','http://www.quisytech.com/Iot/']
+		        ['img/1.jpg','http://www.quisytech.com/Quisypet/'],
+		        ['img/2.jpg','http://www.quisytech.com/Iot/']
 		    );
+				var index = 1;
 		    function rotarImagenes()
 		    {
-		        var index=Math.floor((Math.random()*imagenes.length));
+		        if (index == 0) {
+		        	index = 1;
+		        }
+						else {
+							index = 0;
+						}
 		        document.getElementById("imagen").src=imagenes[index][0];
 		        document.getElementById("link").href=imagenes[index][1];
 		    }
